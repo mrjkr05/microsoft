@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.container{
+    width: 80%;
+    margin-left: 10%;
+}
+
+section{
+    margin: 5% 0;
+}
+
+.button{
+    padding: 2%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.links{
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* Start header css */
+
+.banner-header{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 130px;
+}
+
+.banner-header-navigation{
+    color:#959595;
+    font-size: 17px;    
+    margin-left: -40%;
+}
+
+.banner-header-navigation ul li{
+    list-style: none;
+    padding: 0 2%;
+}
+
+.banner-header-navigation ul li a{
+    color:#959595;
+    font-size: 17px;
+    text-decoration: none;  
+}
+
+.banner-header-navigation ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.endNavbar a i{
+    color: black;
+}
+
+.banner{
+    background-image: url(../images/slide1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    height:463px;
+}
+
+.banner-infos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-infos h1{
+    margin-top: 25%;
+}
+
+.banner-infos p{
+    margin: 2% 0;
+}
+.button-shop{
+    padding: 1% 2% 1% 2%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* End header */
+
+/* Start first section  */
+
+.first-section, .secand-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.section-items img{
+    max-width: 100%;
+}
+
+.section-items{
+    margin: 3%;
+    display: grid;
+    justify-items: start;
+}
+
+.secand-section-infos-descriprition{
+    width: 45%;
+    margin: 10% 0 0 2%;
+}
+
+.secand-section-infos-descriprition  h2 {
+    margin: 2% 0;
+    font-weight: bold;
+}
+
+.secand-section-infos-descriprition  p{
+    margin: 2% 0;
+    font-weight: 200;
+}
+
+
+
+/* End first section  */
+
+/* Start secand section  */
+
+.secand-section-infos{
+    background-image: url(../images/xbox.png);
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* End secand section  */
+
+
+/* Start footer  */
+
+.footer-top{
+    background-image: url(../images/carbon.jpg);
+    height: 406px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+
+.footer-top-describtions{
+    width: 58%;
+    margin: 16% 0 0 3%;
+}
+
+.footer-top-describtions h2 {
+    margin: 2% 0;
+    font-weight: bold;
+}
+
+.footer-top-describtions p{
+    margin: 2% 0;
+    font-weight: 200;
+}
+
+
+.footer-end{
+    margin-top: 3%;
+    font-size: 25px;
+}
+/* End footer  */
+
+/* Start responsive */
+
+@media (max-width: 1000px){
+    .banner-infos h1{
+        margin-top: 40%;
+        font-size: 20px;
+    }
+
+    .banner-infos p{
+        font-size: 10px;
+    }
+
+    .banner-header-navigation, .endNavbar{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+        margin-left: 42%;
+    }
+
+    .first-section, .secand-items{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-top-describtions{
+        margin: 8% 0 0 3%;
+    }
+
+    .footer-top-describtions h2{
+        margin: 8% 0 0 3%;
+    }
+
+    .footer-top-describtions{
+        margin: 8% 0 0 3%;
+    }
+}
